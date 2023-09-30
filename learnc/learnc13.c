@@ -10,7 +10,7 @@ int main() {
     printf("5! = %i\n", factorial(5));
 }
 
-// define your function here (don't forget to declare it)
+/* define your function here (don't forget to declare it) */
 int factorial(int x) {
     
     if (x == 0) {

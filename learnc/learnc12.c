@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main() {
+int main() { 
     int i, j;
     /* TODO: define the 2D pointer variable here */
     int **pnumbers;

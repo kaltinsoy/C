@@ -8,7 +8,7 @@ int main(void){
     printf("%s\n","Enter side of asteriks!");
     scanf("%d", &a);
 
-    while(b = 1) {
+    while(b == 1) {
         while(c <= a) {
             printf("*");
             c++;
@@ -17,29 +17,21 @@ int main(void){
         c = 1;
         b++;
     }
-    
-        while(b != 1 && b < a) {
-        while(c = 1) {
-            printf("*");
-            c++;
-        }
-        while(c != 1 && c < a) {
+    while(b > 1 && b < a) {
+        printf("*");
+        while(c < a) {
             printf(" ");
             c++;
         }
-        while(c = a) {
-            printf("*");
-            c++;
-        }
-        printf("\n");
+        printf("*\n");
         c = 1;
         b++;
     }
-
-    while(b = a) {
+    while(b == a) {
         while(c <= a) {
             printf("*");
             c++;
+
         }
         printf("\n");
         c = 1;

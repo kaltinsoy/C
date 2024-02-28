@@ -9,6 +9,7 @@ int main(void) {
         printf("%s\n","Enter 10 positive Integer");
         scanf("%d", &number);
         if(number >= largest) {
+            SecondLargest = largest;
             largest = number;
         } else if (number > SecondLargest && number != SecondLargest){
             SecondLargest = number;

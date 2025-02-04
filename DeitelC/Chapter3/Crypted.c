@@ -3,10 +3,13 @@
 int main (void) {
 int i = 0, final = 0, mult = 1;
 puts("Enter 4 digit integer:");
-scanf("%d", &i);
+int intC = scanf("%d", &i);
 
 if (i / 1000 >= 10) {
     puts("More than 4 digit");
+    return 1;
+}else if (intC != 1) {
+    puts("Not an Integer!");
     return 1;
 }
 

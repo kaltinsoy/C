@@ -19,7 +19,7 @@ int main(void){
     }
     while(b > 1 && b < a) {
         printf("*");
-        while(c < a) {
+        while(c < a-1) {
             printf(" ");
             c++;
         }

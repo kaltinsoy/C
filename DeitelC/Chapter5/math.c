@@ -2,6 +2,8 @@
 #include <math.h>
 
 double hypotenuse (double side1, double side2);
+int smallest (int x, int y, int z);
+int intToFloat (double number);
 
 int main (void) {
     printf("%.2f\n", cbrt(27.0));
@@ -18,9 +20,24 @@ int main (void) {
     printf("%.5f\n", cos(0.0));
     printf("%.5f\n", tan(0.0));
     printf("%.5f\n", hypotenuse(3.0,4.0));
+    printf("%d\n", smallest(3,3,4));
+    printf("%d\n", intToFloat(3.4));
 }
 
 double hypotenuse (double side1, double side2) {
     double final = (side1*side1) + (side2*side2);
     return sqrt(final);
+    }
+
+int smallest (int x, int y, int z) {
+        if (x <= y && x <= z) {
+            return x;
+        } else if (y <= z && y <= x) {
+            return y;
+        } else {
+            return z;
+        }
+    }
+int intToFloat (double number) {
+    return number;
 }
